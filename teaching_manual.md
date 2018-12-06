@@ -80,4 +80,4 @@ Damit bekommen wir aber immer noch die Tabellenzeiten aus dem Footer. Das Table-
 >Wozu überhaupt Parent/Child/Siblings-Differenzierung?
 
 ## Webscraping mit Scraper 2
-
+https://librarycarpentry.org/lc-webscraping/03-manual-scraping/index.html
