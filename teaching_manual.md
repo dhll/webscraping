@@ -40,3 +40,12 @@ mit denen Dokumente über sog. Tags in Elemente strukturiert sind. HTML ist gewi
 
 Da HTML und XML gleich strukturiert sind, kann  XPath sowohl auf HTML- als auch XML-Dokumente angewendet werden.
 
+XML/HTML-Dokumente sind streng hierarchisch als Baumstruktur organisiert, das sog. DOM, Document Object Model. 
+Demnach ist jedes Element ein *node*/*Knoten*. Jeder Knoten hat 
+* genau ein Elternteil/*parent* (bis auf das Wurzelelement/*root*),
+* 0 - n Kinder/*child*
+* 0 - n Geschwister/*siblings* (Siblings sind Knoten mit dem gleichen Elternteil).
+
+![DOM](https://www.w3schools.com/js/pic_htmltree.gif)
+
+![Node Relationships](https://www.w3schools.com/js/pic_navigate.gif)
