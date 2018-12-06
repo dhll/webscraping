@@ -81,3 +81,6 @@ Damit bekommen wir aber immer noch die Tabellenzeiten aus dem Footer. Das Table-
 
 ## Webscraping mit Scraper 2
 https://librarycarpentry.org/lc-webscraping/03-manual-scraping/index.html
+
+Vllt. Ergebnisliste des K+ nehmen (https://hds.hebis.de/ubmr/Search/Results?lookfor=digital+humanities&type=allfields&filters=on&view=list)
+Da dann auch or, id, ... möglich?
