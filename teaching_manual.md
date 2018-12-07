@@ -59,7 +59,7 @@ Mit XPath kann jeder Knotenpunkt angesteuert werden und der Inhalt des Knotens a
 1. Struktur: html-head-title
 1. Console öffnen und unten in den Editor eingeben: `$x("/html/head/title/text()")`
 
-Mit $x("xxx") wird eine XPath-Suche durchgeführt, `/` navigiert von Knoten zu Knoten, `html`, `head`, `title` sind die Knoten-Namen, `text()` wählt den Text-Knoten aus (d.h. den Text, der zwischen den Tags steht).
+Mit `$x("xxx")` wird eine XPath-Suche durchgeführt, `/` navigiert von Knoten zu Knoten, `html`, `head`, `title` sind die Knoten-Namen, `text()` wählt den Text-Knoten aus (d.h. den Text, der zwischen den Tags steht).
 
 Es werden zwei Ergebnisse ausgegeben, da im Head 2 Title-Tags vorhanden sind. Um nur ein spezifisches Element anzusteuern, kann die Index-Nummer mit angegeben werden: `$x("/html/head/title[1]/text()")`
 
