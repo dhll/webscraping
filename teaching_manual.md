@@ -92,6 +92,8 @@ Die Anzahl der angezeigten Artikel können Sie manuel einstellen: unten 100 ausw
 1. Schreiben Sie ein Xpath, um alle Publikationsdaten auszuwählen
 1. Schreiben Sie ein Xpath, um alle Zeitschriftenhefte (volume, issue) auszuwählen.
 
+Es kann helfen, sich die DOM-Struktur (für die relevanten Elemente) zu skizzieren.
+
 >Seite öffnen, Inspector öffnen und Listenelement auswählen:
 >1. **Artikel**: `$x("//li[@class='article-block']")`
 >1. **Autor**: `$x("//p[@class='article-author']/text()")`
@@ -105,6 +107,7 @@ Gibt nur die relative URL an: mit Concatencate kann die URL ergänzt werden:
  Zur Visualisierung der "Familienstrukturen" in XPath:
  ![XPath axes](https://kimpham54.github.io/library-webscraping/fig/xpath-axes.jpg)
  
+ **Bug: es werden nicht alle Artikel-URLs gefunden!!**
 
 ## Webscraping mit Scraper 2
 https://librarycarpentry.org/lc-webscraping/03-manual-scraping/index.html
