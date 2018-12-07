@@ -93,16 +93,15 @@ Die Anzahl der angezeigten Artikel können Sie manuel einstellen: unten 100 ausw
 1. Schreiben Sie ein Xpath, um alle Zeitschriftenhefte (volume, issue) auszuwählen.
 
 >Seite öffnen, Inspector öffnen und Listenelement auswählen:
->1. Artikel: `$x("//li[@class='article-block']")` so auch in Scraper
->1. Autor: `$x("//p[@class='article-author']/text()")` bzw. in Scraper: `./div/div/a/p[@class='article-author']`
->1. Titel: `$x("//p[@class='article-author']/preceding-sibling::h5")` bzw. in Scraper: `./preceding-sibling::h5`  (Manchmal kann man ein Element nicht direkt auswählen, weil es keine hinreichende ID hat. Dann kann man z.B. das nachfolgende/vorangehende Element auswählen und `/preceding-sibling::h5` oder `/child::*` oder `/parent::*` angeben: Wähle jedes vorangehende Geschwister der Art h5 aus; wähle jedes direkte Kind aller Typen aus; wähle das Elternelement aus.)
->1. URL: `$x("//p[@class='article-author']/parent::*/@href")` bzw. in Scraper: `./parent::*/@href`  gibt nur die relative URL an: mit Concatencate kann die URL ergänzt werden:
-`$x("concat('https://www.glossa-journal.org', //p[@class='article-author']/parent::*/@href)")` bzw.  in Scraper: `concat('https://www.glossa-journal.org', ./parent::*/@href)`
->1. Datum: `$x("//p[@class='article-date']/text()")` bzw. in Scraper: `//p[@class='article-date']`
->1. Volume/Issue: `$x("//div[@class='article-actions']/div[@class='aside']/a/text()")` bzw. in Scraper: `//div[@class='article-actions']/div[@class='aside']/a/text()`
+>1. **Artikel**: `$x("//li[@class='article-block']")`
+>1. **Autor**: `$x("//p[@class='article-author']/text()")`
+>1. **Titel**: `$x("//p[@class='article-author']/preceding-sibling::h5")`  (Manchmal kann man ein Element nicht direkt auswählen, weil es keine hinreichende ID hat. Dann kann man z.B. das nachfolgende/vorangehende Element auswählen und `/preceding-sibling::h5` oder `/child::*` oder `/parent::*` angeben: Wähle jedes vorangehende Geschwister der Art h5 aus; wähle jedes direkte Kind aller Typen aus; wähle das Elternelement aus.)
+>1. **URL**: `$x("//p[@class='article-author']/parent::*/@href")` Eine Kurzform ist: `../@href` (`..` wählt parent-node aus, `.` wählt aktuellen node aus.)
+Gibt nur die relative URL an: mit Concatencate kann die URL ergänzt werden:
+`$x("concat('https://www.glossa-journal.org', //p[@class='article-author']/parent::*/@href)")`
+>1. **Datum**: `$x("//p[@class='article-date']/text()")`
+>1. **Volume/Issue**: `$x("//div[@class='article-actions']/div[@class='aside']/a/text()")`
  
- **Die letzten beiden funktionieren nicht in Scraper!!! Da wird nur der erste Wert ausgelesen und immer wiederholt!!**
-
 
 ## Webscraping mit Scraper 2
 https://librarycarpentry.org/lc-webscraping/03-manual-scraping/index.html
@@ -115,5 +114,10 @@ Jetzt werden die Ergebnisse aus der Console mit Scraper wiederholt!
 1. jetzt die anderen Befehle als jeweils neue Spalte einfügen
 1. Ergebnisse in die Zwischenablage und exportieren
 
-
+>1. **Artikel**: in Scraper `//div[@class='caption-text']`
+>1. **Autor**: in Scraper: `./*/p[@class='article-author']`
+>1. **Titel**: in Scraper: `./*/h5`  (`*` = Wildcard: alle beliebigen nodes, die ein Unterelement `h5` haben.)
+>1. **URL**: in Scraper: `./*/a/@href`. Gibt nur die relative URL an: mit Concatencate kann die URL ergänzt werden: `concat('https://www.glossa-journal.org', ./*/a/@href)`
+>1. **Datum**: in Scraper: `./following-sibling::div/p[@class='article-date']`
+>1. **Volume/Issue**: in Scraper: `./following-sibling::div/div[@class='aside']/a/text()` oder: `../*/div[@class='aside']/a/text()` oder: `./parent::*/*/div[@class='aside']/a/text()` (`..` wählt parent-node aus, `.` wählt aktuellen node aus.)
 
