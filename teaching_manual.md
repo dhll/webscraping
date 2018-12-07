@@ -102,6 +102,9 @@ Gibt nur die relative URL an: mit Concatencate kann die URL ergänzt werden:
 >1. **Datum**: `$x("//p[@class='article-date']/text()")`
 >1. **Volume/Issue**: `$x("//div[@class='article-actions']/div[@class='aside']/a/text()")`
  
+ Zur Visualisierung der "Familienstrukturen" in XPath:
+ ![XPath axes](https://kimpham54.github.io/library-webscraping/fig/xpath-axes.jpg)
+ 
 
 ## Webscraping mit Scraper 2
 https://librarycarpentry.org/lc-webscraping/03-manual-scraping/index.html
