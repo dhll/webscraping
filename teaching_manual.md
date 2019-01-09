@@ -25,7 +25,42 @@ say, collections of journal articles or digitised texts.
 - Web scraping is the process of automating the extraction of data from web sites.
 
 ## Intro HTML
-Wie in DH-Intro MedWiss
+Um eine Einführung in HTML zu bekommen, ist folgende Seite sehr hilfreich:
+
+> (https://www.w3schools.com/html/html_intro.asp) aufrufen. Zur Illustration am Seitenende scrollen ("HTML Page Structure")
+
+Alles auf einer Webseite steht zwischen Tags, die das Element, das sie umfassen definieren.
+Das, was Sie auf einer Webseite sehen, steht zwischen den sog. `<body>-Tags`. Body definiert, dass alles, was dazwischen steht, auf der Webseite (in irgendeiner Form) erscheint.  
+Vor dem Body steht der `<head>-Tag`. Im Head sind sog. Metadaten enthalten, z.B. der Titel der Webseite (das was Sie in der Kopfzeile des Browsers sehen), aber noch viel mehr.  
+Ganz am Anfang einer html-Seite wird der Dokumententyp definiert, so dass der Webbrowser weiß, um was für ein Dokument es sich handelt (z.B. html, oder pdf, oder Bild, ...)
+
+> (https://www.w3schools.com/html/html_basic.asp) aufrufen.
+
+Alle Elemente einer Webseite, sind in Tags eingeschlossen, die definieren, um was es sich handelt. Z.B. **Überschriften** in versch. Ebenen, oder **Absätze**, **Links** oder **Bilder**.
+
+> Jeweils Click auf Try it Yourself
+
+* `<hx>` **Überschriften**: Strukturieren das Dokument.
+* `<p>` **Absätze**: Es kann einen Unterschied geben zwischen der Darstellung auf der Webseite und den Zeichen im Quelltext: HTML unterdrückt extra Leerzeichen oder Zeilenumbrüche.
+* `<a>` **Links**
+* `<img>` **Bilder**
+
+Bei **Bilder** und **Links** sehen Sie, dass die Tags auch noch _Attribute_ haben (können), z.B. beim Link ist die URL angegeben, die durch Klick aufgerufen wird. Der dargestellte Text steht (wie üblich) zwischen den Tags. Beim `<img>`-Tag sind mehrere Attribute aufgeführt: die Quelle/die Datei; ein Alternativtext, der von Screenreadern gelesen wird oder das Bild in Suchmaschinen finden lässt; sowie die Größenangaben. 
+
+Im "realen Leben" sind die Webseiten sehr komplex aufgebaut und die Tags vielfach ineinander geschachtelt. In den Beispielen ist das alles noch sehr übersichtlich.
+
+Einen ersten Eindruck, wie solche Verschatelungen aussehen, gibt die Formatierung von **Tabellen**:
+
+* `<table>`
+  * `<tr>` Table row
+    * `<th>` Table Heading
+    * `<td>` Table data (= Zelle)
+
+Tabellen sind in HTML zeilenweise aufgebaut; d.h. dass es nicht möglich ist, eine Spalte direkt auszuwählen.
+
+Mithilfe der Tags ist es möglich, spezifische Elemente einer Webseite abzufragen, um sie für das Datamining/die Datenanalyse zu nutzen.
+
+Genau das machen wir jetzt mit der Liste aus der IMDb, diese Liste ist als Tabelle strukturiert.
 
 ## Webscraping mit Scraper 1
 Wie in DH-Intro MedWiss:
