@@ -89,6 +89,9 @@ Copy to clipboard, wenn alle 250 Einträge erfasst sind. Einfügen in Excel/Libr
 
 
 ## Intro XPath
+
+In Scraper stehen oben links im Selector-Menü nicht die HTML-Tags, die ausgewählt werden, sondern der XPath-Ausdruck, um die betreffenden Tags auszuwählen.
+
 XPath (XML Path Language) ist eine Ausdruckssprache, um spezifische Ausdrücke/Elemente von XML-Dokumenten anzusteuern und auszuwählen.
 
 > XML, eXtended Markup Language, ist wie HTML, Hypertext Markup Language, eine Auszeichnungssprache, 
