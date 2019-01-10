@@ -145,7 +145,7 @@ Damit bekommen wir aber immer noch die Tabellenzeiten aus dem Footer. Das Table-
 ## Eigenarbeit
 
 Extrahieren Sie alle Zeitschriftenartikel der Zs Glossa (https://www.glossa-journal.org/articles/).
-Die Anzahl der angezeigten Artikel können Sie manuel einstellen: unten 100 auswählen. Dann URL anschauen und `app=300` am Ende er-/einsetzen.
+Die Anzahl der angezeigten Artikel können Sie manuel einstellen: unten 100 auswählen. Dann URL anschauen und `app=400` am Ende er-/einsetzen (bzw. bis unten keine weitere Seite mehr angezeigt wird).
 
 1. Schreiben Sie ein Xpath, um sich alle Artikel auszuwählen
 1. Schreiben Sie ein Xpath, um alle Autoren auszuwählen
