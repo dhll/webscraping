@@ -185,7 +185,7 @@ Jetzt werden die Ergebnisse aus der Console mit Scraper wiederholt!
 >1. **Artikel**: in Scraper `//div[@class='caption-text']`
 >1. **Autor**: in Scraper: `./*/p[@class='article-author']`
 >1. **Titel**: in Scraper: `./*/h5`  (`*` = Wildcard: alle beliebigen nodes, die ein Unterelement `h5` haben.)
->1. **URL**: in Scraper: `./*/a/@href`. Gibt nur die relative URL an: mit Concatencate kann die URL ergänzt werden: `concat('https://www.glossa-journal.org', ./*/a/@href)`
+>1. **URL**: in Scraper: `./a/@href`. Gibt nur die relative URL an: mit Concatenate kann die URL ergänzt werden: `concat('https://www.glossa-journal.org', ./a/@href)`
 >1. **Datum**: in Scraper: `./following-sibling::div/p[@class='article-date']`
 >1. **Volume/Issue**: in Scraper: `./following-sibling::div/div[@class='aside']/a/text()` oder: `../*/div[@class='aside']/a/text()` oder: `./parent::*/*/div[@class='aside']/a/text()` (`..` wählt parent-node aus, `.` wählt aktuellen node aus.)
 
