@@ -120,7 +120,10 @@ Mit XPath kann jeder Knotenpunkt angesteuert werden und der Inhalt des Knotens a
 
 Mit `$x("xxx")` wird eine XPath-Suche durchgeführt, `/` navigiert von Knoten zu Knoten, `html`, `head`, `title` sind die Knoten-Namen, `text()` wählt den Text-Knoten aus (d.h. den Text, der zwischen den Tags steht).
 
-Es werden zwei Ergebnisse ausgegeben, da im Head 2 Title-Tags vorhanden sind. Um nur ein spezifisches Element anzusteuern, kann die Index-Nummer mit angegeben werden: `$x("/html/head/title[1]/text()")`
+Es werden zwei Ergebnisse ausgegeben, da im Head 2 Title-Tags vorhanden sind. 
+In Chrome ist die Anzeige in der Console etwas unübersichtlich. Click auf die Index-Nummern (fängt mit 0 an!) springt zur HTML-Zeile.
+
+Um nur ein spezifisches Element anzusteuern, kann die Index-Nummer mit angegeben werden: `$x("/html/head/title[1]/text()")`
 
 Um den gesamten Knoten auszuwählen (und nicht nur das Textelement) können Sie `$x("/html/head/title[1]")` eingeben.
 
@@ -133,7 +136,7 @@ Um nicht nur den title-Knoten unter html/head zu suchen, sondern alle title-Knot
 
 Um die Tabellenüberschrift auszuschließen, können wir noch den den `tr` übergeordneten Knoten auswählen: Eine Tabelle ist (normalierweise) strukturiert table-thead-tbody. Die Überschrift ist unterhalb des `thead`-Knotens, der Tabelleninhalt unterhalb des `tbody`-Knotens: `$x("//tbody/tr")`
 
-Damit bekommen wir aber immer noch die Tabellenzeiten aus dem Footer. Das Table-Tag der Filmliste hat noch zusätzlich eine *class*-Angabe: `<tbody class="lister-list">`. Die class können wir nutzen, um die Ergebnisse einzuschränken: `$x("//tbody[@class='lister-list']/tr")`
+Damit bekommen wir aber immer noch die Tabellenzeiten aus dem Footer. Das Table-Tag der Filmliste hat noch zusätzlich eine *class*-Angabe: `<tbody class="lister-list">`. Die class können wir nutzen, um die Ergebnisse einzuschränken. Dazu geben wir die Class an, wie auch die Indexnummern (in eckigen Klammern): `$x("//tbody[@class='lister-list']/tr")`
 
 >Weitere Vertiefung von XPath nach dem Tutorial, oder reicht das als Intro? Noch Auswahl Parent-Element? Operators, Booleans?
 >Wozu überhaupt Parent/Child/Siblings-Differenzierung?
