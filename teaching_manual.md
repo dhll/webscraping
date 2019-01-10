@@ -63,9 +63,30 @@ Mithilfe der Tags ist es möglich, spezifische Elemente einer Webseite abzufrage
 Genau das machen wir jetzt mit der Liste aus der IMDb, diese Liste ist als Tabelle strukturiert.
 
 ## Webscraping mit Scraper 1
-Wie in DH-Intro MedWiss:
 
 Liste der beliebtesten Filme mit Scraper auslesen und nach Excel kopieren.
+
+> (https://www.imdb.com/chart/top?ref_=nv_mv_250) aufrufen.
+
+Tabelle und HTML-Code nebeneinander und anhand des ersten Eintrags "Shawshank Redemption" zeigen, von wo bis wo das `<tr>` und `<td>` geht, dass es zahlreiche weitere Informationen gibt, die nicht sichtbar sind.
+
+> In den Tabellenkopf mit Rechtsclick "Scrape Similar" auswählen.
+Scraper sollte so alle Spaltenüberschriften extrahiert haben.
+
+> In der Titelzeile mit Rechtsclick "Scrape Similar" auswählen. 
+Scraper sollte so eine komplette Zeile extrahiert haben.
+
+Um alle 250 Titel zu extrahieren, muss eine komplette Zeile markiert werden:
+
+> Mit der Maus eine komplette `<tr>` markieren und dann per Rechtsklick scrapen.
+
+Oben links stehen die Tags (im XPath-Feld).
+Rechts im Scraper-Hauptfenster sehen Sie die extrahierten Elemente als Spalten angezeigt. Einzelne Spalten können über das Columns-Menü links gelöscht werden.
+
+>Löschen Sie alle Spalten bis auf Rank&Title. Führen Sie Scrape erneut aus (Button unten).
+
+Copy to clipboard, wenn alle 250 Einträge erfasst sind. Einfügen in Excel/LibreOffice. Aus welchem Jahr gibt es die meisten Filme in der Liste?
+
 
 ## Intro XPath
 XPath (XML Path Language) ist eine Ausdruckssprache, um spezifische Ausdrücke/Elemente von XML-Dokumenten anzusteuern und auszuwählen.
