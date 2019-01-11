@@ -135,15 +135,19 @@ Damit bekommen wir aber immer noch die Tabellenzeiten aus dem Footer. Das Table-
 
 ## Cheat Sheat
 
+
+| XPath | Erläuterung  |
+| --- | ---  |
 | `nodename` | Elementname |
 | / | Pfad zwischen zwei Elementen |
 | // | wählt alle Elemente aus |
 | . | aktueller Node |
 | .. | wechselt zum Parentnode |
+| `text()` | wählt nur den Text eines Elementes aus |
 | `[1]` | Indexnummer: Wählt das erste/zweite/... Element aus |
 | `[@class]` | wählt den Node mit dem Attribut `class` aus |
 | `[@class='Name']` | wählt den Node mit dem Attribut `class` und dem Attribut-Wert "Name" aus |
-| `::` | Relationship-Auswahl | `child::*` wählt alle Kinder des aktuelle Nodes aus|
+| `::` | Relationship-Auswahl |
 
 
 ## Eigenarbeit
