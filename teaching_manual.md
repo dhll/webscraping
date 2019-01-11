@@ -176,7 +176,6 @@ Es kann helfen, sich die DOM-Struktur (für die relevanten Elemente) zu skizzier
  
 
 ## Webscraping mit Scraper 2
-https://librarycarpentry.org/lc-webscraping/03-manual-scraping/index.html
 
 Jetzt werden die Ergebnisse aus der Console mit Scraper wiederholt!
 1. Auf der Webseite einen Artikel markieren und Scrape similar auswählen.
@@ -194,5 +193,5 @@ Jetzt werden die Ergebnisse aus der Console mit Scraper wiederholt!
 >1. **Volume/Issue**: in Scraper: `./following-sibling::div/div[@class='aside']/a/text()` oder: `../*/div[@class='aside']/a/text()` oder: `./parent::*/*/div[@class='aside']/a/text()` (`..` wählt parent-node aus, `.` wählt aktuellen node aus.)
 
 ## Weitere Tuturials:
-* https://librarycarpentry.org/lc-webscraping/
-* https://www.w3schools.com/xml/xpath_intro.asp
+* (https://librarycarpentry.org/lc-webscraping/)
+* (https://www.w3schools.com/xml/xpath_intro.asp)
