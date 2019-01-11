@@ -149,6 +149,9 @@ Damit bekommen wir aber immer noch die Tabellenzeiten aus dem Footer. Das Table-
 | `[@class='Name']` | wählt den Node mit dem Attribut `class` und dem Attribut-Wert "Name" aus |
 | `::` | Relationship-Auswahl |
 
+ Zur Visualisierung der "Familienstrukturen" in XPath:
+ 
+ ![XPath axes](https://kimpham54.github.io/library-webscraping/fig/xpath-axes.jpg)
 
 ## Eigenarbeit
 
@@ -172,8 +175,6 @@ Es kann helfen, sich die DOM-Struktur (für die relevanten Elemente) zu skizzier
 >1. **Datum**: `$x("//p[@class='article-date']/text()")`
 >1. **Volume/Issue**: `$x("//div[@class='article-actions']/div[@class='aside']/a/text()")`
  
- Zur Visualisierung der "Familienstrukturen" in XPath:
- ![XPath axes](https://kimpham54.github.io/library-webscraping/fig/xpath-axes.jpg)
  
 
 ## Webscraping mit Scraper 2
