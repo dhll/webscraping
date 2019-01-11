@@ -133,6 +133,18 @@ Damit bekommen wir aber immer noch die Tabellenzeiten aus dem Footer. Das Table-
 >Weitere Vertiefung von XPath nach dem Tutorial, oder reicht das als Intro? Noch Auswahl Parent-Element? Operators, Booleans?
 >Wozu überhaupt Parent/Child/Siblings-Differenzierung?
 
+## Cheat Sheat
+
+| `nodename` | Elementname |
+| / | Pfad zwischen zwei Elementen |
+| // | wählt alle Elemente aus |
+| . | aktueller Node |
+| .. | wechselt zum Parentnode |
+| `[1]` | Indexnummer: Wählt das erste/zweite/... Element aus |
+| `[@class]` | wählt den Node mit dem Attribut `class` aus |
+| `[@class='Name']` | wählt den Node mit dem Attribut `class` und dem Attribut-Wert "Name" aus |
+| `::` | Relationship-Auswahl | `child::*` wählt alle Kinder des aktuelle Nodes aus|
+
 
 ## Eigenarbeit
 
