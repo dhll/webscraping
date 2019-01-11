@@ -155,12 +155,12 @@ Damit bekommen wir aber immer noch die Tabellenzeiten aus dem Footer. Das Table-
 Extrahieren Sie alle Zeitschriftenartikel der Zs Glossa (https://www.glossa-journal.org/articles/).
 Die Anzahl der angezeigten Artikel können Sie manuel einstellen: unten 100 auswählen. Dann URL anschauen und `app=400` am Ende er-/einsetzen (bzw. bis unten keine weitere Seite mehr angezeigt wird).
 
-1. Schreiben Sie ein Xpath, um sich alle Artikel auszuwählen
-1. Schreiben Sie ein Xpath, um alle Autoren auszuwählen
-1. Schreiben Sie ein Xpath, um alle Titel auszuwählen
-1. Schreiben Sie ein Xpath, um alle Artikel-URLs auszuwählen
-1. Schreiben Sie ein Xpath, um alle Publikationsdaten auszuwählen
-1. Schreiben Sie ein Xpath, um alle Zeitschriftenhefte (volume, issue) auszuwählen.
+1. Schreiben Sie eine XPath-Query, um sich alle Artikel auszuwählen
+1. Schreiben Sie eine XPath-Query, um alle Autoren auszuwählen
+1. Schreiben Sie eine XPath-Query, um alle Titel auszuwählen
+1. Schreiben Sie eine XPath-Query, um alle Artikel-URLs auszuwählen
+1. Schreiben Sie eine XPath-Query, um alle Publikationsdaten auszuwählen
+1. Schreiben Sie eine XPath-Query, um alle Zeitschriftenhefte (volume, issue) auszuwählen.
 
 Es kann helfen, sich die DOM-Struktur (für die relevanten Elemente) zu skizzieren.
 
@@ -169,15 +169,12 @@ Es kann helfen, sich die DOM-Struktur (für die relevanten Elemente) zu skizzier
 >1. **Autor**: `$x("//p[@class='article-author']/text()")`
 >1. **Titel**: `$x("//p[@class='article-author']/preceding-sibling::h5")`  (Manchmal kann man ein Element nicht direkt auswählen, weil es keine hinreichende ID hat. Dann kann man z.B. das nachfolgende/vorangehende Element auswählen und `/preceding-sibling::h5` oder `/child::*` oder `/parent::*` angeben: Wähle jedes vorangehende Geschwister der Art h5 aus; wähle jedes direkte Kind aller Typen aus; wähle das Elternelement aus.)
 >1. **URL**: `$x("//p[@class='article-author']/parent::*/@href")` Eine Kurzform ist: `../@href` (`..` wählt parent-node aus, `.` wählt aktuellen node aus.)
-Gibt nur die relative URL an: mit Concatencate kann die URL ergänzt werden:
-`$x("concat('https://www.glossa-journal.org', //p[@class='article-author']/parent::*/@href)")`
 >1. **Datum**: `$x("//p[@class='article-date']/text()")`
 >1. **Volume/Issue**: `$x("//div[@class='article-actions']/div[@class='aside']/a/text()")`
  
  Zur Visualisierung der "Familienstrukturen" in XPath:
  ![XPath axes](https://kimpham54.github.io/library-webscraping/fig/xpath-axes.jpg)
  
- **Bug: es werden nicht alle Artikel-URLs gefunden!!**
 
 ## Webscraping mit Scraper 2
 https://librarycarpentry.org/lc-webscraping/03-manual-scraping/index.html
