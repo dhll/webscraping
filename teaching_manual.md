@@ -4,20 +4,15 @@
 
 - Chrome
 - Chrome-Erweiterung Scraper
-- ein Tabellenbearbeitungsprogramm (Libre Office, Excel,...)
-
-Basierend auf https://librarycarpentry.org/lc-webscraping/
 
 ## Intro Webscraping
 
-Web scraping is a technique for extracting information from websites. 
-This can be done manually but it is usually faster, more efficient and less error-prone if it can be automated.
+Webscraping ist eine Technik, um Informationen aus Webseiten zu extrahieren ("kratzen"), anstatt diese manuell per Copy & Paste zu sammeln.
+In diesem Workshop lernen Sie die Grundlagen von Webscraping kennen mithilfe der Chrome-Erweiterung Scraper sowie einige notwendige Basics von 
+* HTML und
+* XPath
 
-Web scraping allows you to convert non-tabular or poorly structured data into a usable, 
-structured format, such as a .csv file or spreadsheet.
 
-Web scraping is also increasingly being used by scholars to create data sets for text mining projects, 
-say, collections of journal articles or digitised texts.
 
 **Key Points:**
 - Humans are good at categorizing information, computers not so much.
@@ -38,7 +33,7 @@ Ganz am Anfang einer html-Seite wird der Dokumententyp definiert, so dass der We
 
 Alle Elemente einer Webseite, sind in Tags eingeschlossen, die definieren, um was es sich handelt. Z.B. **Überschriften** in versch. Ebenen, oder **Absätze**, **Links** oder **Bilder**.
 
-> Jeweils Click auf Try it Yourself
+> Jeweils Click auf `Try it Yourself`
 
 * `<hx>` **Überschriften**: Strukturieren das Dokument.
 * `<p>` **Absätze**: Es kann einen Unterschied geben zwischen der Darstellung auf der Webseite und den Zeichen im Quelltext: HTML unterdrückt extra Leerzeichen oder Zeilenumbrüche.
@@ -53,8 +48,8 @@ Einen ersten Eindruck, wie solche Verschatelungen aussehen, gibt die Formatierun
 
 * `<table>`
   * `<tr>` Table row
-    * `<th>` Table Heading
-    * `<td>` Table data (= Zelle)
+   * `<th>` Table Heading
+   * `<td>` Table data (= Zelle)
 
 Tabellen sind in HTML zeilenweise aufgebaut; d.h. dass es nicht möglich ist, eine Spalte direkt auszuwählen.
 
@@ -189,3 +184,6 @@ Jetzt werden die Ergebnisse aus der Console mit Scraper wiederholt!
 >1. **Datum**: in Scraper: `./following-sibling::div/p[@class='article-date']`
 >1. **Volume/Issue**: in Scraper: `./following-sibling::div/div[@class='aside']/a/text()` oder: `../*/div[@class='aside']/a/text()` oder: `./parent::*/*/div[@class='aside']/a/text()` (`..` wählt parent-node aus, `.` wählt aktuellen node aus.)
 
+## Weitere Tuturials:
+* https://librarycarpentry.org/lc-webscraping/
+* https://www.w3schools.com/xml/xpath_intro.asp
