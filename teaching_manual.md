@@ -12,12 +12,9 @@ In diesem Workshop lernen Sie die Grundlagen von Webscraping kennen mithilfe der
 * HTML und
 * XPath
 
-
-
-**Key Points:**
-- Humans are good at categorizing information, computers not so much.
-- Often, data on a web site is not properly structured, making its extraction difficult.
-- Web scraping is the process of automating the extraction of data from web sites.
+In dem Workshop soll 
+* die Liste der 250 beliebtesten Filme der IMDb gescrapt werden (https://www.imdb.com/chart/top?ref_=nv_mv_250) und
+* Informationen zu den in der Zeitschrift Glossa (https://www.glossa-journal.org/articles/) erschienenen Artikel aus der Webseite extrahiert werden.
 
 ## Intro HTML
 Um eine Einführung in HTML zu bekommen, ist folgende Seite sehr hilfreich:
@@ -44,12 +41,12 @@ Bei **Bilder** und **Links** sehen Sie, dass die Tags auch noch _Attribute_ habe
 
 Im "realen Leben" sind die Webseiten sehr komplex aufgebaut und die Tags vielfach ineinander geschachtelt. In den Beispielen ist das alles noch sehr übersichtlich.
 
-Einen ersten Eindruck, wie solche Verschatelungen aussehen, gibt die Formatierung von **Tabellen**:
+Einen ersten Eindruck, wie solche Verschachtelungen aussehen, gibt die Formatierung von **Tabellen**:
 
 * `<table>`
   * `<tr>` Table row
-   * `<th>` Table Heading
-   * `<td>` Table data (= Zelle)
+    * `<th>` Table Heading
+    * `<td>` Table data (= Zelle)
 
 Tabellen sind in HTML zeilenweise aufgebaut; d.h. dass es nicht möglich ist, eine Spalte direkt auszuwählen.
 
@@ -92,7 +89,7 @@ XPath (XML Path Language) ist eine Ausdruckssprache, um spezifische Ausdrücke/E
 > XML, eXtended Markup Language, ist wie HTML, Hypertext Markup Language, eine Auszeichnungssprache, 
 mit denen Dokumente über sog. Tags in Elemente strukturiert sind. HTML ist gewissermaßen ein Dialekt von XML.
 
-Da HTML und XML gleich strukturiert sind, kann  XPath sowohl auf HTML- als auch XML-Dokumente angewendet werden.
+Da HTML und XML gleich strukturiert sind, kann XPath sowohl auf HTML- als auch XML-Dokumente angewendet werden.
 
 XML/HTML-Dokumente sind streng hierarchisch als Baumstruktur organisiert, das sog. DOM, Document Object Model. 
 Demnach ist jedes Element ein *node*/*Knoten*. Der Text innerhalb eines Knoten ist ein "Text-Knoten".
@@ -100,7 +97,7 @@ Demnach ist jedes Element ein *node*/*Knoten*. Der Text innerhalb eines Knoten i
 
 Jeder Knoten hat 
 * genau ein Elternteil/*parent* (bis auf das Wurzelelement/*root*),
-* 0 - n Kinder/*child*
+* 0 - n Kinder/*children*
 * 0 - n Geschwister/*siblings* (Siblings sind Knoten mit dem gleichen Elternteil).
 
 Mit XPath kann jeder Knotenpunkt angesteuert werden und der Inhalt des Knotens ausgewählt werden. Die Knoten sind über Beziehungen miteinander verbunden, sog. *path*:
@@ -116,7 +113,7 @@ Mit XPath kann jeder Knotenpunkt angesteuert werden und der Inhalt des Knotens a
 Mit `$x("xxx")` wird eine XPath-Suche durchgeführt, `/` navigiert von Knoten zu Knoten, `html`, `head`, `title` sind die Knoten-Namen, `text()` wählt den Text-Knoten aus (d.h. den Text, der zwischen den Tags steht).
 
 Es werden zwei Ergebnisse ausgegeben, da im Head 2 Title-Tags vorhanden sind. 
-In Chrome ist die Anzeige in der Console etwas unübersichtlich. Click auf die Index-Nummern (fängt mit 0 an!) springt zur HTML-Zeile.
+In Chrome ist die Anzeige in der Console etwas unübersichtlich. Click auf die Index-Nummern springt zur HTML-Zeile. (Die Anzeige der Index-Nummern in Chrome fängt mit 0 an, die Auswahl jedoch fängt mit `[1]` an!)
 
 Um nur ein spezifisches Element anzusteuern, kann die Index-Nummer mit angegeben werden: `$x("/html/head/title[1]/text()")`
 
