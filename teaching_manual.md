@@ -130,8 +130,6 @@ Um die Tabellenüberschrift auszuschließen, können wir noch den den `tr` über
 
 Damit bekommen wir aber immer noch die Tabellenzeiten aus dem Footer. Das Table-Tag der Filmliste hat noch zusätzlich eine *class*-Angabe: `<tbody class="lister-list">`. Die class können wir nutzen, um die Ergebnisse einzuschränken. Dazu geben wir die Class an, wie auch die Indexnummern (in eckigen Klammern): `$x("//tbody[@class='lister-list']/tr")`
 
->Weitere Vertiefung von XPath nach dem Tutorial, oder reicht das als Intro? Noch Auswahl Parent-Element? Operators, Booleans?
->Wozu überhaupt Parent/Child/Siblings-Differenzierung?
 
 ## Cheat Sheat
 
