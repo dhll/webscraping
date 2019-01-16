@@ -1,6 +1,6 @@
 # Intro Webscraping mit XPath und Scraper
 
-PDF-Version: (https://gitprint.com/dhll/webscraping/blob/master/teaching_manual.md)
+PDF-Version: https://gitprint.com/dhll/webscraping/blob/master/teaching_manual.md
 
 ## Voraussetzungen:
 
@@ -21,14 +21,14 @@ In dem Workshop soll
 ## Intro HTML
 Um eine Einführung in HTML zu bekommen, ist folgende Seite sehr hilfreich:
 
-> (https://www.w3schools.com/html/html_intro.asp) aufrufen. Zur Illustration am Seitenende scrollen ("HTML Page Structure")
+> https://www.w3schools.com/html/html_intro.asp aufrufen. Zur Illustration am Seitenende scrollen ("HTML Page Structure")
 
 Alles auf einer Webseite steht zwischen Tags, die das Element, das sie umfassen definieren.
 Das, was Sie auf einer Webseite sehen, steht zwischen den sog. `<body>-Tags`. Body definiert, dass alles, was dazwischen steht, auf der Webseite (in irgendeiner Form) erscheint.  
 Vor dem Body steht der `<head>-Tag`. Im Head sind sog. Metadaten enthalten, z.B. der Titel der Webseite (das was Sie in der Kopfzeile des Browsers sehen), aber noch viel mehr.  
 Ganz am Anfang einer html-Seite wird der Dokumententyp definiert, so dass der Webbrowser weiß, um was für ein Dokument es sich handelt (z.B. html, oder pdf, oder Bild, ...)
 
-> (https://www.w3schools.com/html/html_basic.asp) aufrufen.
+> https://www.w3schools.com/html/html_basic.asp aufrufen.
 
 Alle Elemente einer Webseite, sind in Tags eingeschlossen, die definieren, um was es sich handelt. Z.B. **Überschriften** in versch. Ebenen, oder **Absätze**, **Links** oder **Bilder**.
 
@@ -60,7 +60,7 @@ Genau das machen wir jetzt mit der Liste aus der IMDb, diese Liste ist als Tabel
 
 Liste der beliebtesten Filme mit Scraper auslesen und nach Excel kopieren.
 
-> (https://www.imdb.com/chart/top?ref_=nv_mv_250) aufrufen.
+> https://www.imdb.com/chart/top?ref_=nv_mv_250 aufrufen.
 
 Tabelle und HTML-Code nebeneinander und anhand des ersten Eintrags "Shawshank Redemption" zeigen, von wo bis wo das `<tr>` und `<td>` geht, dass es zahlreiche weitere Informationen gibt, die nicht sichtbar sind.
 
@@ -196,17 +196,17 @@ Jetzt werden die Ergebnisse aus der Console mit Scraper wiederholt!
 >1. **Volume/Issue**: in Scraper: `./following-sibling::div/div[@class='aside']/a/text()` oder: `../*/div[@class='aside']/a/text()` oder: `./parent::*/*/div[@class='aside']/a/text()` (`..` wählt parent-node aus, `.` wählt aktuellen node aus.)
 
 ## Weitere Tutorials:
-* (https://librarycarpentry.org/lc-webscraping/)
-* (https://www.w3schools.com/xml/xpath_intro.asp)
+* https://librarycarpentry.org/lc-webscraping/
+* https://www.w3schools.com/xml/xpath_intro.asp
 
 ### Webscraping mit Python und Beautiful Soup
-* Jeri Wieringa, "Intro to Beautiful Soup," The Programming Historian 1 (2012), (https://programminghistorian.org/en/lessons/intro-to-beautiful-soup)
+* Jeri Wieringa, "Intro to Beautiful Soup," The Programming Historian 1 (2012), https://programminghistorian.org/en/lessons/intro-to-beautiful-soup
 
 ### Webscraping mit R (und rvest)
-* William Marble, "Web Scraping With R" (2016) (http://stanford.edu/~wpmarble/webscraping_tutorial/webscraping_tutorial.pdf)
+* William Marble, "Web Scraping With R" (2016) http://stanford.edu/~wpmarble/webscraping_tutorial/webscraping_tutorial.pdf
 
 ### Webscraping mit Open Refine
-* Evan Peter Williamson, "Fetching and Parsing Data from the Web with OpenRefine," The Programming Historian 6 (2017), (https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine)
+* Evan Peter Williamson, "Fetching and Parsing Data from the Web with OpenRefine," The Programming Historian 6 (2017), https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/3.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
 
