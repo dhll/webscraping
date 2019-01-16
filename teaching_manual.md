@@ -1,4 +1,5 @@
 # Teaching Manual
+PDF-Version: (https://gitprint.com/dhll/webscraping/blob/master/teaching_manual.md)
 
 ## Voraussetzungen:
 
@@ -178,11 +179,12 @@ Es kann helfen, sich die DOM-Struktur (für die relevanten Elemente) zu skizzier
 ## Webscraping mit Scraper 2
 
 Jetzt werden die Ergebnisse aus der Console mit Scraper wiederholt!
-1. Auf der Webseite einen Artikel markieren und Scrape similar auswählen.
-1. Den ersten XPath eingeben
+1. Scraper starten (`Scrape similar` auswählen).
+1. XPath für gesamten Artikel erstellen
+1. Die Spalte unter _Columns_ löschen (rotes Minus)
 1. Spalten hinzufügen mit dem grünen Plus
-1. Spaltennamen hinzufügen
-1. jetzt die anderen Befehle als jeweils neue Spalte einfügen
+1. Spaltennamen und XPath für _Autor/in_ eingeben
+1. jetzt die anderen Befehle (_Titel, URL, Datum, Volume/Issue_) als jeweils neue Spalte einfügen
 1. Ergebnisse in die Zwischenablage und exportieren
 
 >1. **Artikel**: in Scraper `//div[@class='caption-text']`
