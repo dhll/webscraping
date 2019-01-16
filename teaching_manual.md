@@ -202,7 +202,7 @@ Jetzt werden die Ergebnisse aus der Console mit Scraper wiederholt!
 * Jeri Wieringa, "Intro to Beautiful Soup," The Programming Historian 1 (2012), (https://programminghistorian.org/en/lessons/intro-to-beautiful-soup)
 
 ### Webscraping mit R (und rvest)
-* William Marble, Web Scraping With R (http://stanford.edu/~wpmarble/webscraping_tutorial/webscraping_tutorial.pdf)
+* William Marble, "Web Scraping With R" (2016) (http://stanford.edu/~wpmarble/webscraping_tutorial/webscraping_tutorial.pdf)
 
 ### Webscraping mit Open Refine
 * Evan Peter Williamson, "Fetching and Parsing Data from the Web with OpenRefine," The Programming Historian 6 (2017), (https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine)
