@@ -194,6 +194,15 @@ Jetzt werden die Ergebnisse aus der Console mit Scraper wiederholt!
 >1. **Datum**: in Scraper: `./following-sibling::div/p[@class='article-date']`
 >1. **Volume/Issue**: in Scraper: `./following-sibling::div/div[@class='aside']/a/text()` oder: `../*/div[@class='aside']/a/text()` oder: `./parent::*/*/div[@class='aside']/a/text()` (`..` wählt parent-node aus, `.` wählt aktuellen node aus.)
 
-## Weitere Tuturials:
+## Weitere Tutorials:
 * (https://librarycarpentry.org/lc-webscraping/)
 * (https://www.w3schools.com/xml/xpath_intro.asp)
+
+### Webscraping mit Python und Beautiful Soup
+* Jeri Wieringa, "Intro to Beautiful Soup," The Programming Historian 1 (2012), (https://programminghistorian.org/en/lessons/intro-to-beautiful-soup)
+
+### Webscraping mit R (und rvest)
+* William Marble, Web Scraping With R (http://stanford.edu/~wpmarble/webscraping_tutorial/webscraping_tutorial.pdf)
+
+### Webscraping mit Open Refine
+* Evan Peter Williamson, "Fetching and Parsing Data from the Web with OpenRefine," The Programming Historian 6 (2017), (https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine)
