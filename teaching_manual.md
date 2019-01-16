@@ -1,4 +1,5 @@
-# Teaching Manual
+# Intro Webscraping mit XPath und Scraper
+
 PDF-Version: (https://gitprint.com/dhll/webscraping/blob/master/teaching_manual.md)
 
 ## Voraussetzungen:
@@ -206,3 +207,6 @@ Jetzt werden die Ergebnisse aus der Console mit Scraper wiederholt!
 
 ### Webscraping mit Open Refine
 * Evan Peter Williamson, "Fetching and Parsing Data from the Web with OpenRefine," The Programming Historian 6 (2017), (https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine)
+
+[![License: CC BY 4.0](https://licensebuttons.net/l/by/3.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+
